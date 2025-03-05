@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emploi du Temps GI1 (Semestre 2)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h3 {
+            color: #ff0000;
+        }
+        table {
+            width: 100%;
+            margin: 0px;
+            border-collapse: collapse;
+            border: 2px solid #2556b9;
+        }
+        th, td {
+            border: 2px solid #2556b9;
+            padding: 0px;
+            padding-left:0px;
+            padding-right:0px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: rgb(229, 225, 225);;
+            color:rgb(255, 111, 0);
+        }
+        .day {
+            background-color: rgb(229, 225, 225);
+            color:rgb(255, 111, 0);
+            font-weight: bold;
+        }
+        .practical {
+            background-color: white;
+            color:red;
+            font-weight: bold;
+            padding: 0px;
+            padding-left:0px;
+            padding-right:0px;
+        }
+        
+        .course-container {
+            background-color: rgb(216, 239, 182);
+            flex-direction: column;
+            color: rgb(255, 111, 0);
+            display: flex;
+            align-items: center;
+            min-height: 90px; 
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            width:300px;
+    
+        }
+        .space{
+            padding:7px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 2px solid  #2556b9;
+        }
+
+        .logo {
+           width: 120px; 
+        }
+
+        .header-text {
+           text-align: center;
+        }
+
+        .blue-text {
+           color:  #2556b9;
+           margin: 5px 0;
+        }
+
+        .info {
+           display: flex;
+           align-items: center;
+           justify-content: flex-start;
+           gap: 10px; 
+           font-size: 20px;
+           font-weight: bold;
+           margin-left: 20px;
+        }
+        .green-text{
+           color: green;
+           font-weight: bold;
+        }
+        .green-text1{
+           color: green;
+           font-weight: bold;
+           margin-right: 15px;
+        }
+        .red-text {
+           color: red;
+           font-weight: bold;
+           display: block;
+        }
+        .place {
+           font-size: 12px;
+           color: #294831;
+           display: block;
+        }
+        .course-info {
+           font-size: 8px;
+           cursor:pointer;
+           color: #294831;
+           text-decoration: underline;
+           display: inline-block;
+        }
+        .course-info:hover {
+           text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+        }
+        .email {
+           color:black;
+           visibility: hidden; 
+        }
+        .course-info:hover+.email {
+           visibility:visible;
+        }
+        .module-link {
+            background-color: rgb(216, 239, 182);
+            flex-direction: column;
+            color: rgb(255, 111, 0);
+            display: flex;
+            align-items: center;
+            min-height: 60px; 
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            width:300px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo_ensa.png" alt="ENSA Khouribga" class="logo left">
+        <div class="header-text">
+            <h3 class="blue-text">Université Sultan Moulay Slimane</h3>
+            <h3 class="blue-text">École Nationale des Sciences Appliquées de Khouribga</h3>
+            <h4 class="blue-text">Année Universitaire 2024 – 2025</h4>
+        </div>
+        <img src="logo_usms.png" alt="Université Sultan Moulay Slimane" class="logo right">
+    </div>
+
+    <div class="info">
+        <span class="green-text1">Filière</span>
+        <span class="green-text">Génie Informatique</span>
+        <span class="red-text">1</span>
+    </div>
+    <h3>Emploi du Temps GI1 (Semestre 2)</h3>
+    <table>
+        <tr>
+            <th></th>
+            <th>9H00 - 10H30</th>
+            <th>10H45 - 12H15</th>
+            <th class="space"></th>
+            <th>13H00 - 14H30</th>
+            <th>14H45 - 16H15</th>
+        </tr>
+        <tr>
+            <td class="day">Lundi</td>
+            <td>
+                <div class="course-container">
+                    <a href="file:///C:/Users/Dell%20Latitude%205440/Downloads/ADMINISTRATION%20de%20l%20infra%20info_seance4.pdf" class="module-link">ADMINISTRATION DE L'INFRASTRUCTURE INFORMATIQUE</a>
+                    <span class="place">C2</span>
+                    <span class="course-info" >Pr. Tissir</span>
+                    <span class="course-info email">Tissir.najat@gmail.com</span>
+                </div>
+            </td>
+            <td>
+                <div class="course-container">
+                    <a href="file:///C:/Users/Dell%20Latitude%205440/Downloads/ADMINISTRATION%20de%20l%20infra%20info_seance4.pdf" class="module-link">ADMINISTRATION DE L'INFRASTRUCTURE INFORMATIQUE</a>
+                    <span class="place">C2</span>
+                    <span class="course-info">Pr. Tissir</span>
+                    <span class="course-info email">Tissir.najat@gmail.com</span>
+                </div>
+            </td>
+            <td class="space"></td>
+            <td class="practical">Travaux Pratiques</td>
+            <td class="practical">Travaux Pratiques</td>
+
+        </tr>
+        <tr>
+            <td class="day">Mardi</td>
+            <td>
+                <div class="course-container">
+                    THÉORIE DES GRAPHES ET OPTIMISATION COMBINATOIRE
+                    <span class="place">C2</span>
+                    <span class="course-info">Pr.Dargham</span>
+                    <span class="course-info email">a.dargham@usms.ma</span>
+                </div>
+            </td>
+            <td>
+                <div class="course-container">
+                    THÉORIE DES GRAPHES ET OPTIMISATION COMBINATOIRE
+                    <span class="place">C2</span>
+                    <span class="course-info">Pr.Dargham</span>
+                    <span class="course-info email">a.dargham@usms.ma</span>
+                </div>
+            </td>
+            <td class="space"></td>
+            <td>
+                <div class="course-container">
+                    ART DIGITAL
+                    <span class="place">F11</span>
+                    <span class="course-info">Pr.Ghazdali</span>
+                </div>
+            </td>
+            <td>
+                <div class="course-container">
+                    ART DIGITAL
+                    <span class="place">F11</span>
+                    <span class="course-info">Pr.Ghazdali</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="day">Mercredi</td>
+            <td>
+                <div class="course-container">
+                    <a href="file:///C:/Users/Dell%20Latitude%205440/Downloads/JAVA_Cours_SaraBaghdadi%20-%20Part%201.pdf" class="module-link">JAVA</a>
+                    <span class="place">C2</span>
+                    <span class="course-info">Pr.Baghdadi S.</span>
+                    <span class="course-info email">sarabclassroom@gmail.com</span>
+                </div>
+            </td>
+            <td>
+                <div class="course-container">
+                    <a href="file:///C:/Users/Dell%20Latitude%205440/Downloads/JAVA_Cours_SaraBaghdadi%20-%20Part%201.pdf" class="module-link">JAVA</a>
+                    <span class="place">C2</span>
+                    <span class="course-info">Pr.Baghdadi S.</span>
+                    <span class="course-info email">sarabclassroom@gmail.com</span>
+                </div>
+            </td>
+            <td class="space"></td>
+            <td class="practical">Travaux Pratiques</td>
+            <td class="practical">Travaux Pratiques</td>
+        </tr>
+        <tr>
+            <td class="day">Jeudi</td>
+            <td>
+                <div class="course-container">
+                    <a href="file:///C:/Users/Dell%20Latitude%205440/Downloads/chapitre2%20unix%20et%20se.pdf" class="module-link">SYSTÈMES D'EXPLOITATION & UNIX</a>
+                    <span class="place">C2</span>
+                    <span class="course-info">Pr.Omari</span>
+                    <span class="course-info email">reply@classroom.google.com</span>
+                </div>
+            </td>
+            <td>
+                <div class="course-container">
+                    <a href="file:///C:/Users/Dell%20Latitude%205440/Downloads/chapitre2%20unix%20et%20se.pdf" class="module-link">SYSTÈMES D'EXPLOITATION & UNIX</a>
+                    <span class="place">C2</span>
+                    <span class="course-info">Pr.Omari</span>
+                    <span class="course-info email">reply@classroom.google.com</span>
+                </div>
+            </td>
+            <td class="space"></td>
+            <td>
+                <div class="course-container">
+                    ANGLAIS
+                    <span class="place">C2</span>
+                    <span class="course-info">Pr.Boukhlet</span>
+                </div>
+            </td>
+            <td class="practical">Travaux Pratiques</td>
+        </tr>
+        <tr>
+            <td class="day">Vendredi</td>
+            <td>
+                <div class="course-container">
+                    <a href="file:///C:/Users/Dell%20Latitude%205440/Downloads/chapitre%203%20dev%20web.pdf" class="module-link">PROGRAMMATION WEB</a>
+                    <span class="place">C2</span>
+                    <span class="course-info">Pr.Omari</span>
+                    <span class="course-info email">reply@classroom.google.com</span>
+                </div>
+            </td>
+            <td>
+                <div class="course-container">
+                    <a href="file:///C:/Users/Dell%20Latitude%205440/Downloads/chapitre%203%20dev%20web.pdf" class="module-link">PROGRAMMATION WEB</a>
+                    <span class="place">C2</span>
+                    <span class="course-info">Pr.Omari</span>
+                    <span class="course-info email">reply@classroom.google.com</span>
+                </div>
+            </td>
+            <td class="space"></td>
+            <td>
+                <div class="course-container">
+                    FRANÇAIS
+                    <span class="place">C2</span>
+                    <span class="course-info">Pr.Hamza</span>
+                </div>
+            </td>
+            <td class="practical">Travaux Pratiques</td>
+        </tr>
+    </table>
+</body>
+</html>
